@@ -1,0 +1,1 @@
+worker: python bump.py
