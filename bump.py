@@ -7,7 +7,7 @@ from discord.ext import commands
 
 client = commands.Bot(description='Disboard Auto Bumper!', command_prefix="o.")
 
-TOKEN = 'NzQyMTE1OTI0NjA1NDAzMjQ3.XzBblA.duK-rCqu5pbt1_Em2FpSSF0kX5A'
+TOKEN = 'TOKENHERE'
 
 
 @client.command(aliases=['working check'])
