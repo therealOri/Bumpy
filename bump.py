@@ -3,7 +3,7 @@ import discord
 
 from discord.ext import commands
 
-client = commands.Bot(description='Disboard Auto Bumper!', command_prefix="o.")
+client = commands.Bot(description='Disboard Auto Bumper!', command_prefix="p.")
 
 TOKEN = 'TOKENHERE'
 
@@ -16,14 +16,14 @@ async def ping(ctx):
 
 @client.command(aliases=['bump'])
 async def start(ctx):
-#    """Starts the timer to bump every 2 hrs"""
+#    """Starts the timer to bump every 2 hrs and 1 minute"""
     while 1:
         bumpy = 0
         bumpy = bumpy + 1
         try:
-            print("Processing new bump!")
+            print("Bumping your server with Disboard!")
             await ctx.send('!d bump')
-            await asyncio.sleep(7200)
+            await asyncio.sleep(7260)
             print(f"Bump {bumpy} succesfully bumped the server with disboard!")
         except:
             print(f"Couldn't Process bump :( {bumpy}.")
@@ -36,22 +36,20 @@ async def start2(ctx):
         bumpy = 0
         bumpy = bumpy + 1
         try:
-            print("Processing new bump2!")
+            print("Bumping your server with DSC!")
             await ctx.send('.bump')
             await asyncio.sleep(7200)
             print(f"Bump {bumpy} succesfully bumped the server using DSC!")
         except:
             print(f"Couldn't Process bump :( {bumpy}.")
 
-
-@client.event
-async def on_connect():
-    print('Bumpy Online! | Succesful connection!')
-
-
 @client.event
 async def on_ready():
-    print('All Systems ready to go!')
+    await client.change_presence(activity=discord.Game(name=f"Doing teh bumps"), status=discord.Status.online)
+    print("User Online!")
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
 
 
 client.run(TOKEN, bot=False)
