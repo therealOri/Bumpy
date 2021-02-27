@@ -1,5 +1,5 @@
 # Auto-Bump
-Automatically bump disboard and DSC bot with this selfbot code!
+Automatically bump disboard and DSC bots with this selfbot code!
 
 
 
