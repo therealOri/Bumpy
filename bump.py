@@ -53,10 +53,7 @@ async def dsc(ctx):
         print(f"Couldn't Process bump :( {dscB}.")
   else:
       await ctx.send("I don't listen to you.")
-
-
-      
-      
+            
       
   
 #Counts the message/command you send as part of how many to want to delete. Example: p.purge 8 to purge 7 messages from the channel, because it counts your command as 1.
