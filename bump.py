@@ -14,7 +14,7 @@ async def ping(ctx):
   if ctx.author.id == your_main_account_id_here:
     await ctx.send(f"pong! connection speed is {round(client.latency * 1000)}ms")
   else:
-      await ctx.send("I don't listen to you.")
+      pass
 
 
 #    """Starts the timer to bump every 2 hrs and 1 min because sometimes the disboard bot gives an error and tells you to wait 1 more min."""
@@ -32,7 +32,7 @@ async def bump(ctx):
       except:
         print(f"Couldn't Process bump :( {bumpy}.")
   else:
-      await ctx.send("I don't listen to you.")
+      pass
 
       
       
@@ -52,7 +52,7 @@ async def dsc(ctx):
       except:
         print(f"Couldn't Process bump :( {dscB}.")
   else:
-      await ctx.send("I don't listen to you.")
+      pass
             
       
   
@@ -60,9 +60,9 @@ async def dsc(ctx):
 @client.command(pass_context=True)
 async def purge(ctx, amount=7):
     if ctx.author.id == your_main_account_id_here:
-      await ctx.channel.purge(limit=amount)
+      await ctx.channel.purge(limit=amount+1)
     else:
-      await ctx.send("I don't listen to you.")
+      pass
 
 
 
