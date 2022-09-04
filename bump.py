@@ -62,7 +62,7 @@ async def purge(ctx, amount=7):
     if ctx.author.id == your_main_account_id_here:
       await ctx.channel.purge(limit=amount+1)
     else:
-      pass
+        pass
 
 
 
