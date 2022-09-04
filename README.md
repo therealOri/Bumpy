@@ -9,6 +9,8 @@ Selfbots are to an extent banned by discord (If it abuses their api) and can get
 
 I personally don't think sending a message to a channel once every 2hrs or so would be considered abuse of the api as it is no different from a normal user/human doing the same thing. If you like what you see or if you use this code, please star this repo as it helps make me feel good :p 
 
+Disboard also doesn't like automated stuff so if they find out that you are automating the process, they will more than likely remove your guild from their site and or blacklist you.
+
 
 # Disclaimer
 **I am not responsible or liable for punishment for whatever happens to you or your accounts while using this code. That is fully on you.**
